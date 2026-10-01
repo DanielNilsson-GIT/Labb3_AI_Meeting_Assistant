@@ -1,0 +1,23 @@
+.result {
+    margin-top: 16px;
+}
+
+.result__heading {
+    margin: 0 0 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #777;
+}
+
+.result__content {
+    min-height: 140px;
+    padding: 24px;
+
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 14px;
+
+    line-height: 1.6;
+}

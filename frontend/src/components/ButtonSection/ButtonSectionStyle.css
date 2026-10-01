@@ -1,0 +1,9 @@
+.button-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.button-section > * {
+    flex: 1;
+}

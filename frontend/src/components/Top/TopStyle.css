@@ -1,0 +1,26 @@
+/* TopStyle.css */
+
+.top {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.top__title {
+    margin: 0 0 16px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.top__user {
+    margin: 0 0 40px;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.top__question {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
