@@ -31,3 +31,7 @@ export interface BulletList {
     heading: string;
     summary: string;
 }
+
+export interface boterror {
+    error: string;
+}

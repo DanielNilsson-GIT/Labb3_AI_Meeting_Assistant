@@ -7,9 +7,11 @@ import chattest from "../../services/chatRequestService";
 function UserInputField({
     fieldType,
     setAnswer,
+    setloadstate,
 }: {
     fieldType: string;
     setAnswer: (answer: any) => void;
+    setloadstate: (loadstate: boolean) => void;
 }) {
     const [chatRequest, setChatRequest] = useState("");
     const activeTool = useSelector(
@@ -32,8 +34,10 @@ function UserInputField({
                 className="user-input"
                 onSubmit={async (e) => {
                     e.preventDefault();
+                    setloadstate(true);
                     const answer = await chattest(chatRequest);
                     setAnswer(answer);
+                    setloadstate(false);
                     console.log(answer);
                 }}
             >

@@ -5,6 +5,7 @@ async function chattest(request: string) {
         body: JSON.stringify({ chatRequest: request }),
     }); //adress från launcsettings.json. OBS måste säga att det är en postmethod för fetch har get som standard
     const data = await postpayload.json();
+
     return data;
 }
 export default chattest;

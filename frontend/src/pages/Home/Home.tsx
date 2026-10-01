@@ -12,12 +12,17 @@ function Home() {
     const [answer, setAnswer] = useState<
         MeetingNotes | MeetingAgenda | MeetingInvite | null
     >(null);
+    const [isloading, setloadstate] = useState(false);
     return (
         <div className="Home">
             <Top />
             <ButtonSection />
-            <UserInputField fieldType="text" setAnswer={setAnswer} />
-            <Result aiResult={answer} />
+            <UserInputField
+                fieldType="text"
+                setAnswer={setAnswer}
+                setloadstate={setloadstate}
+            />
+            <Result aiResult={answer} statusloading={isloading} />
         </div>
     );
 }
