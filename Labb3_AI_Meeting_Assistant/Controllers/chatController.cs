@@ -10,7 +10,7 @@ using System.Text.Json;
 
 namespace Labb3_AI_Meeting_Assistant.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/ai")]
     [ApiController]
 
     
@@ -61,7 +61,7 @@ namespace Labb3_AI_Meeting_Assistant.Controllers
             }
         }
 
-        [HttpPost("meetinginvite")]
+        [HttpPost("invitation")]
         public async Task<IActionResult> MeetingInvite([FromBody] chatRequestDto dto)
         {
             try

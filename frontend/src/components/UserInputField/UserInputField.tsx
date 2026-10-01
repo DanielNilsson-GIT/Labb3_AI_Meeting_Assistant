@@ -35,7 +35,7 @@ function UserInputField({
                 onSubmit={async (e) => {
                     e.preventDefault();
                     setloadstate(true);
-                    const answer = await chattest(chatRequest);
+                    const answer = await chattest(chatRequest, activeTool);
                     setAnswer(answer);
                     setloadstate(false);
                     console.log(answer);
